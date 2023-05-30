@@ -1,0 +1,131 @@
+<div class="no-scrolling">
+    
+    <!-- SECCIÓN HEADER -->
+    <header class="header">
+      <div class="container">
+        <input type="checkbox" id="toggle-checkbox" class="header__checkbox" >
+        <nav class="nav flex-row">
+          <a href="#"><img class="nav__logo" src="https://img.freepik.com/vector-premium/lindo-perro-escuchando-musica-auriculares_290315-1371.jpg?w=2000" alt="Logo"></a>
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#episodios" class="nav__link">Episodios</a></li>
+              <li class="nav__item"><a href="#nosotros" class="nav__link">Nosotros</a></li>
+              <li class="nav__item"><a href="#invitados" class="nav__link">Entrevistas</a></li>
+              <li class="nav__item"><a href="#topicos" class="nav__link">Tópicos</a></li>
+              <li class="btn-suscribir"><a href="#" class="nav__link" routerLink="/security/sign-in">SUSCRIBIR</a></li>
+            </ul>
+          </div>
+        </nav>
+        <label class="header__label" for="toggle-checkbox">
+          <div class="nav__toggle">
+            <span class="hamburger"></span>
+          </div>
+        </label>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- SECCIÓN HERO -->
+      <section id="hero" class="hero">
+        <div class="container">
+          <h1 class="texto-titulo hero__titulo">Podcaster <span class="texto-tachado">cualquiera</span> Aprende aqui<span class="texto-azulito">.</span></h1>
+          <p class="hero__slogan-desktop">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, muy pronto.</p>
+          <p class="hero__slogan-mobile">Un podcast que explora el mundo de la programación. Nuevos episodios, pronto</p>
+          <button class="btn texto-btn" href="#" (click)="openDialog()">Conocé más</button>
+        </div>
+      </section>
+
+      <!-- SECCIÓN EPISODIOS -->
+      <section id="episodios" class="episodios">
+        <div class="container">
+          <h2 class="texto-titulo texto-blanco episodios__titulo">Episodios mas recientes</h2>
+          <div class="flex-column episodios__podcasts">
+            <iframe class="episodios__iframe" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe class="episodios__iframe" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe class="episodios__iframe" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe class="episodios__iframe" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN NOSOTROS -->
+      <section id="nosotros" class="nosotros">
+        <div class="container nosotros__container">
+          <div class="nosotros__img-container">
+            <img class="nosotros__img" src="./assets/seccion_nosotros_img.png" alt="Imagen smartphone">
+          </div>
+          <div class="nosotros__texto">
+            <h2 class="texto-titulo nosotros__titulo">Nosotros</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nulla laboriosam quibusdam recusandae ducimus veniam, ullam delectus accusantium dolor quidem odit repudiandae, neque voluptatum provident cumque. Dolore sapiente odit eveniet?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ad maxime voluptatibus quisquam. Quia nam in porro! Explicabo architecto corrupti obcaecati sunt debitis nostrum aliquam ullam, recusandae repellendus amet ab.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN INVITADOS -->
+      <section id="invitados" class="invitados">
+        <div class="container">
+          <h2 class="texto-titulo invitados__titulo">Invitadas/os estelares</h2>
+        </div>
+        <div class="flex-column invitados__gallery">
+          <img src="./assets/seccion_invitados_1_grace-hopper.png" alt="Invitada 1 Grace Hopper">
+          <img src="./assets/seccion_invitados_2_Katie-Bouman.png" alt="Invitada 2 Katie Bouman">
+          <img src="./assets/seccion_invitados_3_Margaret_Hamilton.png" alt="Invitada 3 Margaret Hamilton">
+          <img src="./assets/seccion_invitados_4.png" alt="Invitada 4 Women">
+          <img src="./assets/seccion_invitados_5_eniac_operators.png" alt="Invitada 5 Eniac operators">
+          <img src="./assets/seccion_invitados_6_susan-kare.png" alt="Invitada 6 Susan Kare">
+        </div>
+      </section>
+
+      <!-- SECCIÓN TÓPICOS -->
+      <section id="topicos" class="topicos">
+        <div class="container">
+          <h2 class="texto-titulo topicos__titulo">Algunos de nuestros temas</h2>
+          <div class="flex-column topicos__cards">
+            <div class="flex-column topicos__card">
+              <img src="./assets/seccion_topicos_1.svg" alt="Tópico 1: Trabajo remoto" class="topicos__img">
+              <h3 class="texto-subtitulo">Trabajo remoto</h3>
+            </div>
+            <div class="flex-column topicos__card">
+              <img src="./assets/seccion_topicos_2.svg" alt="Tópico 2: Repensando la programación" class="topicos__img">
+              <h3 class="texto-subtitulo">Repensando la programación</h3>
+            </div>
+            <div class="flex-column topicos__card">
+              <img src="./assets/seccion_topicos_3.svg" alt="Tópico 3: Bases del código" class="topicos__img">
+              <h3 class="texto-subtitulo">Bases del código</h3>
+            </div>
+            <div class="flex-column topicos__card">
+              <img src="./assets/seccion_topicos_4.svg" alt="Tópico 4: Seguridad informática" class="topicos__img">
+              <h3 class="texto-subtitulo">Seguridad informática</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN NOVEDADES -->
+      <section id="novedades" class="novedades">
+        <div class="container">
+          <h2 class="texto-titulo texto-blanco novedades__titulo">¿Querés las últimas novedades?</h2>
+          <a class="btn texto-btn novedades__btn" href="#">Escuchá los episodios</a>
+        </div>
+      </section>
+      
+    </main>
+
+    <!-- SECCIÓN FOOTER -->
+    <footer class="footer">
+      <div class="container flex-column footer__container">
+        <p class="footer__copyright">&copy; 2023 - PODCASTER | Proyecto programación web</p>
+        <div class="footer__social-icons flex-row">
+          <a href="https://spotify.com" target="_blank" class="footer__social-icon"><i class="fab fa-spotify"></i></a>
+          <a href="https://instagram.com" target="_blank" class="footer__social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com" target="_blank" class="footer__social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="https://facebook.com" target="_blank" class="footer__social-icon"><i class="fab fa-facebook"></i></a>
+          <a href="https://web.telegram.org/" target="_blank" class="footer__social-icon"><i class="fab fa-telegram"></i></a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
